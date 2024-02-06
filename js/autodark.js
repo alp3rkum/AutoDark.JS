@@ -25,5 +25,6 @@ function run()
 }
 
 window.onload = function() {
+    run();
     setInterval(run,60000); //runs once every minute
 }
