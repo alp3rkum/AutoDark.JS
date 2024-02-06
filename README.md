@@ -19,7 +19,8 @@ The Version 3 of AutoDark system has the following features:
     [data-bs-theme=value]{
         ...
         }
-```
+    ```
+
 
 ## Usage
 
