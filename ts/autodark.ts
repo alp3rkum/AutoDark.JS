@@ -31,5 +31,6 @@ function autodark(): void {
 }
 
 window.onload = function (): void {
+        autodark();
         setInterval(autodark, 60000); // runs once every minute
 }
