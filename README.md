@@ -26,3 +26,7 @@ window.onload = function() {
 ```
 
 Its *toggleDarkMode()* can be modified according to the CSS layout of the page.
+
+## Version 3
+
+This branch will be kept for legacy purposes, but the v3-js-ts is the main branch now. The Version 3 sees major simplification updates over Version 2 to make developers' job easier.
