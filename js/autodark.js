@@ -4,7 +4,7 @@
 */
 const html = document.querySelector("html"); //goes straight to the HTML element
 
-function isNightTime() {
+function isDayTime() {
     const date = new Date();
     const hour = date.getHours(); //gets the current hour of the day
     const season = Math.floor(((date.getMonth() + 1)%12)/4); //gets the season of the year
@@ -21,10 +21,11 @@ function isNightTime() {
 
 function run()
 {
-    isNightTime() ? html.dataset.bsTheme = "dark" : html.dataset.bsTheme = "light"; //if it's night time, change the page's theme to dark, else change it to light
+    console.log(isDayTime());
+    isDayTime() ? html.dataset.bsTheme = "light" : html.dataset.bsTheme = "dark"; //if it's night time, change the page's theme to dark, else change it to light
 }
 
 window.onload = function() {
     run();
-    setInterval(run,60000); //runs once every minute
+    setInterval(run,60000); //runs every minute
 }
