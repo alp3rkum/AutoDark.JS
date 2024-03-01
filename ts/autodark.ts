@@ -11,13 +11,13 @@ function checkDayTime(): boolean {
     const season: number = Math.floor(((date.getMonth() + 1) % 12) / 4); // gets the season of the year
 
     if (season === 0) // if it's winter
-        return hour >= 7 && hour < 19;
+        return !(hour >= 7 && hour < 19);
     else if (season === 1 || season === 3) // if it's spring or autumn/fall
-        return hour >= 7 && hour < 20;
+        return !(hour >= 7 && hour < 20);
     else if (season === 2) // if it's summer
-        return hour >= 6 && hour < 21;
+        return !(hour >= 6 && hour < 21);
     else // exception handling
-        return hour >= 7 && hour < 19;
+        return !(hour >= 7 && hour < 19);
     
 
 }
